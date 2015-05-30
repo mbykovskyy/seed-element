@@ -3,19 +3,19 @@ set -eu
 
 name="$1"
 
-# Reinit git
+echo "Re-initialising git repo"
 rm -rf .git
 git init
 
-# Replace placeholder name with real name
+echo "Replacing seed-element with ${name}"
 for file in **/*.*
 do
-  echo "Replacing seed-element with ${name} in ${file}"
+  echo "Processing ${file}"
   sed -i '' "s/seed-element/${name}/g" "$file"
 done
 
-# Rename files
+echo "Renaming seed-element.html to ${name}.html"
 mv seed-element.html "${name}.html"
 
-# Install dependencies
+echo "Install bower dependencies"
 bower install

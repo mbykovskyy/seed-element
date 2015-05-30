@@ -1,21 +1,19 @@
 {
   "name": "seed-element",
   "version": "0.0.0",
-  "authors": [
-    "Anonymous <anonymous@example.com>"
-  ],
-  "description": "An element providing a solution to no problem in particular.",
+  "description": "Polymer web component for seed-element-description.",
+  "homepage": "https://github.com/mbykovskyy/seed-element",
+  "author": "Maksym Bykovskyy",
+  "license": "MIT",
+  "main": "seed-element.html",
   "keywords": [
+    "seed-element",
     "web-component",
     "web-components",
-    "polymer",
-    "seed"
+    "polymer"
   ],
-  "main": "seed-element.html",
-  "license": "http://polymer.github.io/LICENSE.txt",
-  "homepage": "https://github.com/<USERNAME>/seed-element/",
   "ignore": [
-    "/.*",
+    "**/.*",
     "/test/",
     "/demo/"
   ],

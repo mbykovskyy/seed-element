@@ -8,7 +8,7 @@ rm -rf .git
 git init
 
 echo "Replacing seed-element with ${name}"
-for file in **/*.*
+for file in **/*.* *.*
 do
   echo "Processing ${file}"
   sed -i '' "s/seed-element/${name}/g" "$file"

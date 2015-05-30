@@ -8,9 +8,10 @@ rm -rf .git
 git init
 
 # Replace placeholder name with real name
-for file in **/*
+for file in **/*.*
 do
-  sed -i -e "s/seed-element/${name}/g" file
+  echo "Replacing seed-element with ${name} in ${file}"
+  sed -i '' "s/seed-element/${name}/g" "$file"
 done
 
 # Rename files
